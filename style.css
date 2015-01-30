@@ -143,9 +143,7 @@ a:hover {
 /* Page */
 
 #page {
-	width: 1000px;
-	margin: 0 auto;
-	padding: 0px 0px 30px 0px;
+    background: #000;
 }
 
 /* Content */
@@ -158,13 +156,10 @@ a:hover {
 
 .post {
 	overflow: hidden;
-	background: #000000;
-	border-radius: 15px;
 	padding: 30px;
 }
 
 .post .title {
-	padding: 7px 0px 0px 0px;
 	letter-spacing: -1px;
 }
 
