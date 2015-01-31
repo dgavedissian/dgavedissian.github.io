@@ -14,26 +14,25 @@ body {
 	color: #BABABA;
 }
 
-h1 {
-	font-size: 1.8em;
-}
-
-h2 {
-	font-size: 2.2em;
-}
-
-h3 {
-	font-size: 1.6em;
-}
-
 h1, h2, h3 {
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
-	font-weight: normal;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 200;
 	color: #CFCFCF;
+}
+
+h1 {
+	font-size: 2.8em;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1.2em;
 }
 
 p, ul, ol {
@@ -71,9 +70,18 @@ a:hover {
 #titlebar {
 	overflow: hidden;
 	height: 80px;
-	margin: 0 auto;
 	padding: 0px 0px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
+    
+    width: 100%;
+
+    position: fixed;
+}
+
+#titlebar-content {
+    position: fixed;
+    left: 50%;
+    margin-left: -500px;
 }
 
 /* Logo */
@@ -143,7 +151,7 @@ a:hover {
 /* Page */
 
 #page {
-    background: #000;
+    background: #0D141A;
 }
 
 /* Content */
@@ -151,15 +159,24 @@ a:hover {
 #content {
 	float: left;
 	width: 660px;
-	padding: 0px 0px 0px 0px;
+	padding: 0;
+}
+
+.content {
+    padding: 0 20px;
 }
 
 .post {
 	overflow: hidden;
-	padding: 30px;
+	padding: 80px 30px 0 30px;
+}
+
+.top-post {
+    padding-top: 30px;
 }
 
 .post .title {
+    font-size: 2em; 
 	letter-spacing: -1px;
 }
 

@@ -19,19 +19,19 @@ Released   : 20121026
 <link href='http://fonts.googleapis.com/css?family=Abel|Satisfy' rel='stylesheet' type='text/css' />
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
-<body>
+<body id="top">
 <div id="header">
     <div id="titlebar">
-        <div class="container">
+        <div id="titlebar-content" class="container">
             <div id="logo">
                 <h1>David Avedissian</h1>
             </div>
             <div id="menu">
                 <ul>
-                    <li class="current_page_item"><a href="index.html">Homepage</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="DavidAvedissianCV.pdf">CV</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#top">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -40,10 +40,31 @@ Released   : 20121026
 <!-- end #header -->
 <div id="page">
     <div class="container">
-        <div class="post">
-            <h2 class="title">About Me</h2>
+        <div class="post top-post">
+            <h1 class="title">About Me</h2>
             <div class="entry">
-                <p>Hi! Welcome to my online portfolio. My name is David and I'm currently a Computing student at Imperial College London.</p>
+                <p>Hi! Welcome to my online portfolio. My name is David and I'm currently a 2nd year Computing student at Imperial College London.</p>
+            </div>
+        </div>
+        <div class="post" id="projects">
+            <h1 class="title">Projects</h1>
+            <div class="entry">
+                <h2>&raquo; Transcendent</h2>
+                <p class="content">Transcendent is a multiplayer orientated space simulation game like X-Wing vs Tie Fighter and Freespace. The player is based inside the cockpit of his or her own personal fighter-class ship, which is completely constructed from an assortment of parts and customised to their own needs or play styles. Thanks to a seamless universe engine, battles are placed in a wide range of space environments from beautiful sunrises on the surface of a planet to harsh derelict debris fields or dog-fighting inside the ring system of a gas giant. All the game play is dictated by Newtonian physics; changing direction will require the ship to fire various thrusters accordingly to adjust it's trajectory, and explosion shock waves will be felt.</p>
+                <h3 class="content">Screenshots</h3>
+                <p class="content">
+                    <img width="300px" height="168.75px" /><img width="300px" height="168.75px" /><img width="300px" height="168.75px" />
+                </p>
+                <a href="http://www.indiedb.com/games/transcendent" title="View Transcendent on Indie DB" target="_blank"><img src="http://button.indiedb.com/popularity/medium/games/33835.png" alt="Transcendent" /></a>
+            </div>
+            <div class="entry">
+                <h2>&raquo; Software Rasteriser</h2>
+                <p class="content">A software rasteriser library written in C to understand how modern graphical pipelines work. Inspired by the design of legacy OpenGL. Supports vertex and fragment shader programs using function pointers. Can render output to a window or to a terminal.</p>
+                <p class="content">Github: <a href="#">www.github.com/davedissian/rasteriser-lib</a></p>
+                <h3 class="content">Screenshots</h3>
+                <p class="content">
+                    <img width="300px" height="168.75px" /><img width="300px" height="168.75px" /><img width="300px" height="168.75px" />
+                </p>
             </div>
         </div>
     </div>
