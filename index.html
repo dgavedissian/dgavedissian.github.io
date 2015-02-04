@@ -30,7 +30,7 @@ Released   : 20121026
                 <ul>
                     <li><a href="#top">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#cv">CV</a></li>
+                    <li><a href="DavidAvedissianCV.pdf">CV</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -50,12 +50,17 @@ Released   : 20121026
             <h1 class="title">Projects</h1>
             <div class="entry">
                 <h2>&raquo; Transcendent</h2>
+                <a class ="content" href="http://www.indiedb.com/games/transcendent" title="View Transcendent on Indie DB" target="_blank"><img src="http://button.indiedb.com/popularity/medium/games/33835.png" alt="Transcendent" /></a>
                 <p class="content">Transcendent is a multiplayer orientated space simulation game like X-Wing vs Tie Fighter and Freespace. The player is based inside the cockpit of his or her own personal fighter-class ship, which is completely constructed from an assortment of parts and customised to their own needs or play styles. Thanks to a seamless universe engine, battles are placed in a wide range of space environments from beautiful sunrises on the surface of a planet to harsh derelict debris fields or dog-fighting inside the ring system of a gas giant. All the game play is dictated by Newtonian physics; changing direction will require the ship to fire various thrusters accordingly to adjust it's trajectory, and explosion shock waves will be felt.</p>
                 <h3 class="content">Screenshots</h3>
                 <p class="content">
                     <a href="images/t1.jpg"><img width="300px" height="188px" src="images/t1t.jpg" /></a><a href="images/t2.jpg"><img width="300px" height="188px" src="images/t2t.jpg" /></a><a href="images/t3.jpg"><img width="300px" height="188px" src="images/t3t.jpg" /></a>
                 </p>
-                <a href="http://www.indiedb.com/games/transcendent" title="View Transcendent on Indie DB" target="_blank"><img src="http://button.indiedb.com/popularity/medium/games/33835.png" alt="Transcendent" /></a>
+                <h3 class="content">Videos</h3>
+                <p class="content">Here is a video of an old tech demo I wrote back in August 2012 where I had created a basic planetary engine based on a cube which has been subdivided a number of times and shaped as a sphere. I chose to implement it with this primitive rather than an alternative such as an icosahedron due to how easy it is to extend well known algorithms such as ROAM or Geomipmapping due to the terrain having 6 effectively flat sides. My approach used a quad-tree where each node represents a patch of 5x5 quads.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/N1RbJdjQfwM" frameborder="0" allowfullscreen></iframe>
+                <p class="content">In this newer video I showcase the scale of the current engine. All the objects such as the spaceship, moon, planet and parent star are all realistically scaled, ranging from a few hundred metres to millions of KM seamlessly with no loading screens. The video has a number of artifacts such as z-fighting, which I have now fixed by using logarithmic z-buffering rather than standard perspective projection, which isn't great for huge game worlds.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Y-RtH_7-wnw" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="entry">
                 <h2>&raquo; Software Rasteriser</h2>
