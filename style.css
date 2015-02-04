@@ -37,7 +37,7 @@ h3 {
 
 p, ul, ol {
 	margin-top: 0;
-	line-height: 180%;
+	line-height: 140%;
 }
 
 ul, ol {
@@ -50,6 +50,12 @@ a {
 a:hover {
 }
 
+.subscript
+{
+    font-size: 0.7em;
+    text-align: center;
+}
+
 .container {
 	width: 1000px;
 	margin: 0px auto;
@@ -58,6 +64,7 @@ a:hover {
 iframe {
     display: block;
     margin: 0 auto;
+    padding: 20px 0;
 }
 
 /* Header */
