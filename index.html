@@ -1,18 +1,134 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>David Avedissian</title>
-<link href='https://fonts.googleapis.com/css?family=Abel|Satisfy' rel='stylesheet' type='text/css' />
-<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>David Avedissian</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #eaf0f6;
+      color: #1e1e1e;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.15;
+      mix-blend-mode: multiply;
+      pointer-events: none;
+    }
+    .blob1, .blob4 {
+      width: 280px;
+      height: 280px;
+    }
+    .blob1 {
+      top: 3%;
+      left: 5%;
+      background: #375aca;
+    }
+    .blob4 {
+      bottom: 25%;
+      left: 10%;
+      background: #2a50b5;
+    }
+    .blob2 {
+      width: 360px;
+      height: 360px;
+      bottom: 10%;
+      right: 5%;
+      background: #74a9ff;
+    }
+    .blob3 {
+      width: 220px;
+      height: 220px;
+      top: 25%;
+      right: 15%;
+      background: #4c7be8;
+    }
+    .blob5 {
+      width: 300px;
+      height: 300px;
+      top: 50%;
+      left: 40%;
+      background: #557bff;
+    }
+    .blob6 {
+      width: 240px;
+      height: 240px;
+      bottom: 40%;
+      right: 35%;
+      background: #3160c3;
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 460px;
+      padding: 2rem 3rem;
+      background: rgba(255 255 255 / 0.85);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      line-height: 1.5;
+      border-radius: 4px;
+      user-select: none;
+    }
+    h1 {
+      font-size: 3rem;
+      margin: 0 0 0.2rem 0;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1.3rem;
+      color: #4a4a4a;
+      margin: 0 0 2rem 0;
+    }
+    .links {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+    .links a {
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #2a6f97;
+      transition: color 0.2s ease;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 2px;
+    }
+    .links a:hover {
+      color: #1c4b6e;
+      border-color: #1c4b6e;
+    }
+  </style>
 </head>
 <body>
-<div id="content">
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+  <div class="blob blob4"></div>
+  <div class="blob blob5"></div>
+  <div class="blob blob6"></div>
+  <main>
     <h1>David Avedissian</h1>
-    <h2>Software Engineer</h2>
-    <p><a href="https://github.com/dgavedissian">GitHub</a> | <a href="https://www.linkedin.com/in/dgavedissian">LinkedIn</a></p>
-</div>
+    <p>Software Engineer</p>
+    <div class="links">
+      <a href="https://github.com/dgavedissian" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/dgavedissian" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#" id="email-link">Contact</a>
+    </div>
+  </main>
+  <script>
+    const user = "contact", domain = "dga.uk";
+    document.getElementById("email-link").href = `mailto:${user}@${domain}`;
+  </script>
 </body>
 </html>
